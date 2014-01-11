@@ -1,0 +1,37 @@
+*{padding: 0px;margin: 0px}
+#wrap-content{width: 600px;margin: auto}
+#div-content{float: left; min-width: 600px;position: relative; font-family: Arial;font-size: 20px;text-align: justify;background: #FAFAFA;color: gray;padding: 20px;line-height: 30px;border: 1px dashed #CCC;background: #F8F7ED}
+/* Login */
+a{text-decoration: none;color: gray}
+a:hover{color: black;}
+.error{color: red; font-weight: bold}
+#login {font-size: 13px;width: 350px;margin: auto;}
+#login fieldset {border: 1px solid #CCC;background: #F7E9E5;padding: 5px 10px;margin-top: -20px;}
+#login legend {font-size: 14px;font-weight: bold}
+#login label{width: 100px;float: left;}
+#login a{background: #CCC; padding: 4px;border: 1px solid #CCC;border-radius: 5px 4px;}
+/* Racer */
+#race input{width: 450px;border: 1px solid #CCC;height: 25px; font-size: 25px;color: gray;padding: 5px 2px;}
+#car {float: left;width: 100%;margin-bottom: 10px;}
+#car .player_name{float: left;width: 40px;height: 40px;padding-left: 60px;font-size: 10px}
+#race #car .bg_car{background: url(../images/car.png) no-repeat;width: 58px;height: 24px;position: absolute;left: 10px}
+#race #car .car_1{background-position: 0 0;}
+#race #car .car_2{background-position: -58px 0;}
+#race #car .car_3{background-position: -116px 0;}
+#race #car .car_4{background-position: -174px 0;}
+#race #car .car_5{background-position: -232px 0;}
+#race #car .car_6{background-position: -290px 0;}
+#race #car .car_7{background-position: -348px 0;}
+#race #car .car_8{background-position: -406px 0;}
+#race #car .car_9{background-position: -464px 0;}
+#race #car .car_10{background-position: -522px 0;}
+#race #car .car_11{background-position: -580px 0;}
+#race #racer{float: left;width: 75%}
+#race #speed-clock{float: right;width: 25%}
+#race #progress-bar {border-bottom: dashed goldenrod;width: 70%;position: absolute;margin-top: 25px;}
+#race #speed{text-align: right;font-size: 14px;}
+#race #typer-text{float: left;width: 100%;margin-top: 20px;}
+
+#rooms .item-room{float: left;width: 178px;height: 60px;border: 1px dashed;padding: 10px 5px;text-align: center;margin-left: 10px}
+#rooms small{font-size: 14px;}
+.item-room:hover{background: #CCC;cursor: pointer;}

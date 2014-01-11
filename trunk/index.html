@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script src='http://127.0.0.1:8080/socket.io/socket.io.js'></script>
+        <script src='./assets/js/jquery.js'></script>
+        <script src='./app/Racing.js'></script>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+        <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+        <script>
+        </script>
+    </head>
+    <body>  
+        <div id="wrap-content">  
+
+            <div id="div-content">
+                <div id="rooms">
+
+                </div>
+                <div id="login">
+                    <fieldset>
+                        <legend>Tài khoản</legend>
+                        <p class="error"></p>
+                        <label>Tên truy cập:</label> <input type="text" name="username" /><br />
+                        <label>Mật khẩu: </label><input type="password" name="password" /><br />
+                        <label>&nbsp;</label><a href="javascript:void(0)" onclick="Racing._request('verify')">Đăng nhập</a>
+                    </fieldset>
+                </div>
+                <div id="race" style="display: none"> 
+                    <div id="typer-racing">
+
+                    </div>
+                    <div id="typer-text">
+                        <span id="done"></span>
+                        <span id="target" style="text-decoration: underline; color: rgb(153, 204, 0);">Có</span>
+                        <span id="plain">một con đường mang tên là tình yêu, khi tôi bước một mình đếm những nỗi cô đơn đếm trong từng làn gió thoảng đếm trong từng hạt mưa bay đến đây từng tia nắng sớm mai đến khi ngàn ánh sao rơi trong bóng đêm.</span><br /><br />
+                        <!--<input type="text" name="typer" id="typer" onkeypress="typer(event)" autocapitalize="off" autocorrect="off" /><br />-->
+                        <input type="text" name="typer" id="typer" onkeypress="Racing._request('playing', event)" autocapitalize="off" autocorrect="off" /><br />
+                        <small style="float: left; font-size: 11px;color: red;">** Nhấn khoảng cách để kết thúc chữ.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>    
+</html>
